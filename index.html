@@ -3,228 +3,221 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfólio de Matheus Faria — desenvolvimento web e projetos pessoais.">
-  <title>Matheus Faria | Desenvolvedor</title>
+  <title>Matheus Faria | Desenvolvedor em formação — Portfólio</title>
+  <meta name="description" content="Portfólio de Matheus Faria, desenvolvedor em formação com projetos em HTML, CSS, JavaScript e C#. Veja meus trabalhos e entre em contato.">
+  <meta name="author" content="Matheus Faria">
+  <meta name="theme-color" content="#0a0d13">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Matheus Faria | Desenvolvedor em formação">
+  <meta property="og:description" content="Projetos, habilidades e contato de Matheus Faria. HTML, CSS, JavaScript e C#.">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff6b35'/%3E%3Ctext x='32' y='44' font-family='Arial' font-size='36' font-weight='800' text-anchor='middle' fill='white'%3EM%3C/text%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Matheus Faria",
+    "jobTitle": "Desenvolvedor em formação",
+    "email": "mailto:fariarobertomatheus@gmail.com",
+    "telephone": "+55-31-98380-7284",
+    "sameAs": ["https://github.com/Faria07022008"]
+  }
+  </script>
 </head>
 <body>
-  <header class="header" id="inicio">
-    <nav class="nav container">
-      <a class="logo" href="#inicio"><span>M</span> Matheus Faria</a>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-      <button class="menu-btn" aria-label="Abrir menu">☰</button>
-
-      <div class="nav-links">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre mim</a>
+  <header class="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="logo" href="index.html" aria-label="Matheus Faria — início">
+        <span>M</span>
+        Matheus Faria
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="menu">
+        <a href="#sobre">Sobre</a>
         <a href="#habilidades">Habilidades</a>
         <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+        <a href="https://github.com/Faria07022008" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a class="nav-cta" href="contato.html">Contato</a>
       </div>
-
-      <a class="nav-cta" href="https://github.com/Faria07022008" target="_blank" rel="noopener">Meu GitHub</a>
     </nav>
   </header>
 
-  <main>
+  <main id="conteudo">
     <section class="hero container">
-      <div class="hero-text">
-        <p class="eyebrow">Olá, eu sou</p>
-        <h1>Matheus <span>Faria</span></h1>
-        <h2>Desenvolvedor em formação</h2>
-        <p class="hero-description">
-          Sou apaixonado por tecnologia e desenvolvimento. Estou construindo minha
-          experiência através de projetos práticos, aprendendo novas ferramentas e
-          transformando ideias em páginas e aplicações funcionais.
+      <div class="hero-copy">
+        <span class="status"><i></i> Aberto a oportunidades</span>
+        <h1>Matheus Faria<em>.</em></h1>
+        <p class="hero-role" aria-live="off">
+          <span id="typing" data-words="Desenvolvedor em formação|Foco em desenvolvimento web|Programação em C# e .NET">Desenvolvedor em formação</span><span class="typing-cursor" aria-hidden="true">|</span>
         </p>
-
+        <p class="hero-description">
+          Construo minha experiência com projetos, estudo e prática diária.
+          Gosto de transformar ideias em soluções simples, funcionais e bem apresentadas.
+        </p>
         <div class="hero-buttons">
-          <a class="btn primary" href="#projetos">Ver meus projetos</a>
-          <a class="btn secondary" href="#contato">Entre em contato</a>
+          <a class="btn primary" href="#projetos">Ver projetos</a>
+          <a class="btn secondary" href="contato.html">Entrar em contato</a>
         </div>
-
         <div class="socials">
-          <a href="https://github.com/Faria07022008" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
-          <a href="#contato" aria-label="Contato">✉</a>
+          <a href="https://github.com/Faria07022008" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="mailto:fariarobertomatheus@gmail.com">E-mail ↗</a>
         </div>
       </div>
 
-      <div class="hero-card">
-        <div class="code-window">
-          <div class="window-bar">
-            <span></span><span></span><span></span>
-          </div>
-          <pre><code><span class="purple">const</span> <span class="blue">matheus</span> = {
-  nome: <span class="green">"Matheus Faria"</span>,
-  foco: <span class="green">"Desenvolvimento Web"</span>,
-  aprendizado: <span class="green">"todos os dias"</span>,
-  projetos: <span class="orange">3</span>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="editor">
+          <div class="editor-bar"><i></i><i></i><i></i><span>matheus.js</span></div>
+<pre><span class="k">const</span> dev = {
+  nome: <span class="s">"Matheus Faria"</span>,
+  foco: <span class="s">"Desenvolvimento web"</span>,
+  stack: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JavaScript"</span>, <span class="s">"C#"</span>],
+  aprendendo: <span class="s">"todos os dias"</span>,
+  aberto: <span class="ok">true</span>
 };
 
-<span class="purple">function</span> <span class="blue">criar</span>() {
-  <span class="purple">return</span> <span class="green">"ideias em código"</span>;
-}</code></pre>
-        </div>
-        <div class="floating-badge">🚀 Sempre aprendendo</div>
-      </div>
-    </section>
-
-    <section class="section about" id="sobre">
-      <div class="container two-columns">
-        <div class="section-heading">
-          <p class="eyebrow">Conheça um pouco</p>
-          <h2>Sobre mim</h2>
-        </div>
-        <div>
-          <p>
-            Meu nome é <strong>Matheus Faria</strong>. Estou desenvolvendo minha
-            trajetória na área de tecnologia e programação, com foco em aprender
-            através da prática e da criação de projetos.
-          </p>
-          <p>
-            Gosto de transformar ideias em interfaces organizadas, funcionais e
-            agradáveis de usar. Meu objetivo é evoluir constantemente e construir
-            projetos cada vez mais completos.
-          </p>
-          <a class="text-link" href="https://github.com/Faria07022008" target="_blank" rel="noopener">
-            Ver meu GitHub →
-          </a>
+<span class="p">// vamos construir algo juntos?</span></pre>
         </div>
       </div>
     </section>
 
-    <section class="section skills" id="habilidades">
+    <section class="section alt" id="sobre">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="section-label">Sobre mim</p>
+          <h2 class="section-title">Aprender, praticar e evoluir.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            Sou estudante e desenvolvedor em formação, interessado em tecnologia,
+            programação e na criação de projetos para colocar meus conhecimentos em prática.
+          </p>
+          <p>
+            Meu objetivo é continuar aprendendo, melhorar minhas habilidades e criar
+            aplicações cada vez mais organizadas, responsivas e úteis.
+          </p>
+          <div class="facts">
+            <div class="fact">
+              <strong>Foco atual</strong>
+              <span>Desenvolvimento web e C# com .NET</span>
+            </div>
+            <div class="fact">
+              <strong>Como aprendo</strong>
+              <span>Construindo projetos de ponta a ponta</span>
+            </div>
+            <div class="fact">
+              <strong>Objetivo</strong>
+              <span>Crescer profissionalmente em projetos reais</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="habilidades">
       <div class="container">
-        <div class="center-heading">
-          <p class="eyebrow">O que estou desenvolvendo</p>
-          <h2>Minhas habilidades</h2>
-          <p>Conhecimentos que fazem parte da minha jornada de programação.</p>
+        <div class="section-head reveal">
+          <p class="section-label">Habilidades</p>
+          <h2 class="section-title">Tecnologias que uso e estudo.</h2>
+          <p>Conhecimentos desenvolvidos em aulas, exercícios e projetos pessoais.</p>
         </div>
-
         <div class="skill-grid">
-          <article class="skill-card">
-            <div class="skill-icon">&lt;/&gt;</div>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">&lt;/&gt;</div>
             <h3>HTML</h3>
-            <p>Estruturação de páginas web com HTML semântico e organizado.</p>
+            <p>Estruturação de páginas e criação de interfaces semânticas e acessíveis.</p>
           </article>
-          <article class="skill-card">
-            <div class="skill-icon">#</div>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">{ }</div>
             <h3>CSS</h3>
-            <p>Estilização, layouts responsivos e criação de interfaces modernas.</p>
+            <p>Estilização, responsividade, animações e organização visual.</p>
           </article>
-          <article class="skill-card">
-            <div class="skill-icon">JS</div>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">JS</div>
             <h3>JavaScript</h3>
-            <p>Estudando lógica e interatividade para tornar projetos mais completos.</p>
+            <p>Interações, lógica e funcionalidades para páginas web.</p>
           </article>
-          <article class="skill-card">
-            <div class="skill-icon">GH</div>
-            <h3>GitHub</h3>
-            <p>Organização e publicação dos meus projetos e evolução do código.</p>
+          <article class="skill-card reveal">
+            <div class="skill-icon" aria-hidden="true">C#</div>
+            <h3>C#</h3>
+            <p>Programação e desenvolvimento de aplicações com .NET.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section projects" id="projetos">
+    <section class="section alt" id="projetos">
       <div class="container">
-        <div class="center-heading">
-          <p class="eyebrow">Meu trabalho</p>
-          <h2>Projetos</h2>
-          <p>Alguns projetos que fazem parte da minha evolução como desenvolvedor.</p>
+        <div class="section-head reveal">
+          <p class="section-label">Projetos</p>
+          <h2 class="section-title">O que venho construindo.</h2>
+          <p>Meus repositórios públicos mais recentes, atualizados automaticamente a partir do GitHub.</p>
         </div>
-
-        <div class="filter">
-          <button class="filter-btn active" data-filter="todos">Todos</button>
-          <button class="filter-btn" data-filter="web">Web</button>
-          <button class="filter-btn" data-filter="html">HTML/CSS</button>
+        <div class="project-grid" id="project-grid" aria-live="polite">
+          <div class="project-card skeleton" aria-hidden="true"></div>
+          <div class="project-card skeleton" aria-hidden="true"></div>
+          <div class="project-card skeleton" aria-hidden="true"></div>
         </div>
-
-        <div class="project-grid">
-          <article class="project-card" data-category="html web">
-            <div class="project-preview periodic">
-              <span class="preview-tag">HTML + CSS</span>
-              <div class="periodic-symbol">H</div>
-              <div class="preview-title">Tabela Periódica</div>
-            </div>
-            <div class="project-info">
-              <span>Projeto Web</span>
-              <h3>Tabela Periódica</h3>
-              <p>Interface web para representar a tabela periódica de forma visual e organizada.</p>
-              <a href="https://github.com/Faria07022008/Tabela-Periodica" target="_blank" rel="noopener">Ver no GitHub →</a>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="html web">
-            <div class="project-preview louie">
-              <span class="preview-tag">HTML + CSS</span>
-              <div class="louie-mark">LS</div>
-              <div class="preview-title">Louie Smith</div>
-            </div>
-            <div class="project-info">
-              <span>Projeto Web</span>
-              <h3>Louie Smith</h3>
-              <p>Projeto de site com múltiplas páginas, imagens, serviços e organização de conteúdo.</p>
-              <a href="https://github.com/Faria07022008/Louie-smith" target="_blank" rel="noopener">Ver no GitHub →</a>
-            </div>
-          </article>
-
-          <article class="project-card" data-category="html web">
-            <div class="project-preview ecommerce">
-              <span class="preview-tag">Projeto Web</span>
-              <div class="shop-icon">🛒</div>
-              <div class="preview-title">E-commerce</div>
-            </div>
-            <div class="project-info">
-              <span>Projeto Web</span>
-              <h3>E-commerce</h3>
-              <p>Site de comércio eletrônico com páginas de produtos, cadastro, contato e promoções.</p>
-              <a href="https://github.com/Faria07022008/-E-commerce" target="_blank" rel="noopener">Ver no GitHub →</a>
-            </div>
-          </article>
-        </div>
-
-        <div class="github-more">
-          <a class="btn secondary" href="https://github.com/Faria07022008?tab=repositories" target="_blank" rel="noopener">
-            Ver todos os repositórios
-          </a>
+        <div class="projects-more">
+          <a class="btn secondary" href="https://github.com/Faria07022008?tab=repositories" target="_blank" rel="noopener noreferrer">Ver todos no GitHub ↗</a>
         </div>
       </div>
     </section>
 
-    <section class="section contact" id="contato">
-      <div class="container contact-box">
-        <div>
-          <p class="eyebrow">Vamos conversar</p>
-          <h2>Tem uma ideia ou projeto?</h2>
-          <p>
-            Estou sempre buscando aprender, criar e evoluir. Você pode conhecer
-            meus projetos ou entrar em contato comigo pelo GitHub.
-          </p>
+    <section class="section">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div>
+            <h2>Tem uma vaga ou um projeto em mente?</h2>
+            <p>Vamos conversar. Respondo o mais rápido possível.</p>
+          </div>
+          <div class="contact-actions">
+            <a class="btn primary" href="contato.html">Enviar mensagem</a>
+            <a class="btn secondary" href="https://wa.me/5531983807284" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+          </div>
         </div>
-        <a class="btn primary" href="https://github.com/Faria07022008" target="_blank" rel="noopener">
-          Acessar meu GitHub
-        </a>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container footer-content">
-      <a class="logo" href="#inicio"><span>M</span> Matheus Faria</a>
-      <div class="footer-links">
-        <a href="#inicio">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><span>M</span> Matheus Faria</a>
+        <p>Desenvolvedor em formação, sempre buscando aprender e transformar ideias em projetos.</p>
       </div>
-      <p>© <span id="year"></span> Matheus Faria. Todos os direitos reservados.</p>
+      <div class="footer-contact">
+        <h3>Contato</h3>
+        <a href="mailto:fariarobertomatheus@gmail.com">fariarobertomatheus@gmail.com</a>
+        <a href="tel:+5531983807284">(31) 98380-7284</a>
+        <a href="https://wa.me/5531983807284" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a href="https://github.com/Faria07022008" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <div class="footer-navigation">
+        <h3>Navegação</h3>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year">2026</span> Matheus Faria. Todos os direitos reservados.</span>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
